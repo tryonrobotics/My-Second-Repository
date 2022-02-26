@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/tryo0a14/public_html/hyundai/
+    - /bin/cp -R * $DEPLOYPATH
