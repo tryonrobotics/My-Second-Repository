@@ -16,6 +16,7 @@
                     const data = await response.json();
                     localStorage.clear();
                     localStorage.setItem('data', JSON.stringify(data.hits));
+                    console.log(data);
                 } catch (error) {
                     console.log('Request failed', error);
                 }
