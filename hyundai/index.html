@@ -19,7 +19,14 @@ fetch(url)
 
     </head>
     <body>
-        <div><script>document.write(text);</script>TEST</div>
+        <div><script>
+                        const url = "https://docs.google.com/spreadsheet/pub?key=184EEdK6dMQLwCKrfSUD0YsjUGnyt8NPjoPUZw3zDftM&range=A3&output=csv";
+fetch(url)
+.then(response => response.text())
+.then(text => {
+  console.log(text)
+});  
+document.write(text);</script>TEST</div>
         <div style="position:relative; width:30%; height:100%; float:right;"> 
             <!-- <script>document.write('<iframe src="https://vimeo.com/event/' + eventCode + '/chat/" width="100%" height="100%" frameborder="0"></iframe>');</script> -->
         </div>
