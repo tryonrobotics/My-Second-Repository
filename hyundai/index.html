@@ -10,30 +10,48 @@
             const url = "https://docs.google.com/spreadsheet/pub?key=184EEdK6dMQLwCKrfSUD0YsjUGnyt8NPjoPUZw3zDftM&range=A3&output=csv";
 
 
-            async function getContent(url) {
-                try {
-                    const response = await fetch(url);
-                    const data = await response.json();
-                    localStorage.clear();
-                    localStorage.setItem('data', JSON.stringify(data.hits));
-                    console.log(data);
-                } catch (error) {
-                    console.log('Request failed', error);
-                }
-            }
         </script>
+                    <style>
+                        body {
+                            background: white;
+                        }
 
+                        #header {
+                            height: 20%;
+                        }
+                        #streamTitle {
+                            text-align: center;
+                        }
+
+                        #chatPane {
+                            position: relative;
+                            width: 30%;
+                            height: 80%;
+                            float: right;
+                        }
+            
+                        #videoPane {
+                            position:relative;
+                            width: 70%;
+                            height: 80%;
+                            float: left;
+                        }
+                        </style>
 
     </head>
     <body>
-        <div>
+        <div id="header">
+            <div id="streamTitle">
 
-<script>document.write("title"+title);</script>TEST</div>
-        <div style="position:relative; width:30%; height:100%; float:right;"> 
-            <!-- <script>document.write('<iframe src="https://vimeo.com/event/' + eventCode + '/chat/" width="100%" height="100%" frameborder="0"></iframe>');</script> -->
+            <script>document.write("title"+title);</script>
+            TEST
+            </div>
         </div>
-        <div style="position:relative; width: 70%; height:100%; float: left">
-              <!-- <script>document.write('<iframe src="https://vimeo.com/event/' + eventCode + '/embed" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>')</script>   -->
+        <div id="chatPane"> 
+            <script>document.write('<iframe src="https://vimeo.com/event/' + eventCode + '/chat/" width="100%" height="100%" frameborder="0"></iframe>');</script>
+        </div>
+        <div id="videoPane">
+              <script>document.write('<iframe src="https://vimeo.com/event/' + eventCode + '/embed" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>')</script>  
         </div>
 
     </body>
