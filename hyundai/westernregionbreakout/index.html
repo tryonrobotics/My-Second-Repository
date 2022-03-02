@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Hyundai/Genesis National Field Meeting</title>
+        <link href = "../cssscript.css" rel = "stylesheet">     <!-- including CSS stylsheet, so all pages can have style/look edited at same time -->
+        <script>
+            var eventCode = "1905198";                          //  EDIT ME  //       Event code from vimeo link
+            var streamTitle = "Western Region Breakout";     //  EDIT ME  //       Title of Stream/Meeting
+
+            var eventTitle = "2022 National Field Meeting";     //  Master Event Title
+            var slogan = "Evolve Your Journey";                 //  Master Event Slogan
+        </script>
+    </head>
+    <body>
+        <div id="header">
+            <video autoplay muted loop src="../logos/ribbonsTake3.mov"></video>
+            <img id="hyundai" src="../logos/HyundaiTransparentSm.png">
+            <img id="genesis" src="../logos/GenesisTransparentSm.png">
+            <div id="eventTitle"><script>document.write(eventTitle);</script></div>
+            <div id="slogan"><script>document.write(slogan);</script></div>
+            <div id="streamTitle"><script>document.write(streamTitle);</script></div>
+        </div>
+        <div id="chatPane"> 
+            <script>document.write('<iframe src="https://vimeo.com/event/' + eventCode + '/chat/" width="100%" height="100%" frameborder="0"></iframe>');</script>
+        </div>
+        <div id="videoPane">
+              <script>document.write('<iframe src="https://vimeo.com/event/' + eventCode + '/embed" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>')</script>  
+        </div>
+
+    </body>
+</html>
