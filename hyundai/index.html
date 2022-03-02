@@ -15,6 +15,7 @@
                         body {
                             background: black;
                         }
+                        @media screen and (min-width: 600px) {
 
                         video {
                             position: absolute;
@@ -67,7 +68,7 @@
                             color: rgb(187,217,253);
                             font-family: Copperplate, Verdana, Geneva, Tahoma, sans-serif;
                         }
-
+                       
                         
                         #eventTitle {
                             color: rgb(187, 217, 250);
@@ -113,6 +114,14 @@
                         a:visited { text-decoration: none; color: inherit}
                         a:hover { text-decoration: none; color: inherit}
                         a:active { text-decoration: none; color: inherit}
+
+                        }
+
+                        @media screen and (max-width: 600px) {
+                            .streamList {
+                                width: 100%;
+                            }
+                        }
                         </style>
 
     </head>
