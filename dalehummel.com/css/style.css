@@ -539,6 +539,7 @@ body.opened .beker_tm_topbar{
 	align-items: center;
 }
 .beker_tm_hero .content .title{
+	width: 50%;
 	font-size: 70px;
 	font-weight: 800;
 	text-shadow: 0 4px 4px rgba(0,0,0,.25);
@@ -573,7 +574,7 @@ body.opened .beker_tm_hero .content .title{
 	z-index: -1;
 }
 .beker_tm_hero .content .text{
-	width: 100%;
+	width: 50%;
 	float: left;
 	margin-bottom: 30px;
 	opacity: 0;
