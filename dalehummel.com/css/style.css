@@ -2177,6 +2177,8 @@ body.modal{
 	.beker_tm_portfolio .mobile_filter{display: block;}
 }
 @media (max-width: 1040px) {
+	.beker_tm_hero .content .title {width: 50%;}
+	.beker_tm_hero .content p.text {width: 50%}
 	.beker_tm_hero .content .title span:before{bottom: 11px;}
 	.beker_tm_topbar{display: none;}
 	.beker_tm_mobile_menu{display: block;}
