@@ -2146,6 +2146,8 @@ body.modal{
 /*---------------------------------------------------*/
 
 @media (max-width: 1600px) {
+	.beker_tm_hero .content .title {width: 50%;}
+	.beker_tm_hero .content p.text {width: 50%}
 	h1, h2, h3, h4, h5, h6{line-height: 1.2;}
 	.container{max-width: 1070px;}
 	.beker_tm_topbar ul li{margin-right: 22px;}
@@ -2169,6 +2171,8 @@ body.modal{
 	.beker_tm_contact .third{margin-bottom: 20px;}
 }
 @media (max-width: 1200px) {
+	.beker_tm_hero .content .title {width: 50%;}
+	.beker_tm_hero .content p.text {width: 50%}
 	.beker_tm_modalbox_service .box_inner{width: 500px;}
 	.beker_tm_modalbox_service .close{margin-left: 10px;}
 	.beker_tm_modalbox_news .box_inner{width: 500px;}
