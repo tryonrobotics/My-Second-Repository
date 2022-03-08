@@ -565,7 +565,7 @@ body.opened .beker_tm_hero .content .title{
 .beker_tm_hero .content .title span:before{
 	position: absolute;
 	content: "";
-	width: 100%;
+	width: 50%;
 	height: 4px;
 	background-color: #1473E6;
 	left: 0px;
