@@ -74,3 +74,20 @@ video {
     float: left;
 }
 
+#takemehome {
+    text-align: right;
+    color: rgb(146, 196, 253);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: large;
+    position: relative;
+    top: 70%;
+    padding-right: 1%;
+ 
+}
+
+a:link { text-decoration:underline; color: inherit;}
+a:visited { text-decoration: underline; color: inherit}
+a:hover { text-decoration: underline; color: inherit}
+a:active { text-decoration: underline; color: inherit}
