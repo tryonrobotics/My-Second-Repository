@@ -81,8 +81,9 @@ video {
     font-style: italic;
     font-weight: 600;
     font-size: large;
-    position: relative;
-    top: 70%;
+    position: fixed;
+    left: 70%;
+    top: 17%;
     padding-right: 1%;
  
 }
