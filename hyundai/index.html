@@ -15,7 +15,7 @@
                         body {
                             background: black;
                         }
-                        @media screen and (min-width: 600px) {
+                        @media screen and (min-width: 900px) {
 
                         video {
                             position: absolute;
@@ -137,10 +137,125 @@
 
                         }
 
-                        @media screen and (max-width: 600px) {
-                            .streamList {
-                                width: 100%;
+                        @media screen and (max-width: 900px) {
+                            video {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            min-width: 100%;
+                            min-height: 100%;
+                            z-index: -1;
+                            object-position: center;
+                            object-fit: cover;
                             }
+
+                        #hyundai {
+                            max-height: 15%;
+                            max-width: 40%;
+                            position:fixed;
+                            top: -.5%;
+                            right: 60%;
+                            float: left;
+                        }
+
+                        #genesis {
+                            max-width: 40%;
+                            max-height: 15%;
+                            position: fixed;
+                            float:center;
+                            top: -.5%;
+                            left: 60%;
+                        }
+
+                        #header {
+                            height: 20%;
+                        }
+                        #streamTitle {
+                            text-align: center;
+                            color: rgb(187, 217, 253);
+                            font-family: copperplate, Verdana, Geneva, Tahoma, sans-serif;
+                            font-size: xxx-large;
+                            position: relative;
+                            top: 50%;
+                        }
+                        #streamList {
+                            float:left;
+                            width: calc(100%);
+                            font-size: xx-large;
+                            padding-top: 5%;
+                            text-align: center;
+                            list-style: none;
+                            color: rgb(187,217,253);
+                            font-family: Copperplate, Verdana, Geneva, Tahoma, sans-serif;
+                        }
+                       
+                        
+                        #eventTitle {
+                            color: rgb(187, 217, 250);
+                            position: relative;
+                            text-align: center;
+                            padding-top: 10%;
+                            font-size: 2em;
+                            font-weight: bold;
+                        }
+
+                        #slogan {
+                            color: rgb(146, 196, 253);
+                            font-family: Verdana, Geneva, Tahoma, sans-serif;
+                            font-style: italic;
+                            font-weight: 600;
+                            position: relative;
+                            padding-top: 0%;
+                            text-align: center;
+                        }
+
+                        #chatPane {
+                            position: relative;
+                            width: 30%;
+                            height: 80%;
+                            float: right;
+                        }
+            
+                        #videoPane {
+                            position:relative;
+                            width: 70%;
+                            height: 80%;
+                            float: left;
+                        }
+                        
+                        #list {
+                            color:white;
+                            list-style: none;
+                            font-size:small;
+                            list-style: none;
+                            font-family: Verdana, Geneva, Tahoma, sans-serif;
+                        }
+                        #time {
+                            color:white;
+                            list-style: none;
+                            font-size:small;
+                            width: 130px;
+                            text-align: right;
+                            padding-right: 5px;
+                            list-style: none;
+                            font-family: Verdana, Geneva, Tahoma, sans-serif;
+                        }
+
+                        #listName {
+                            color:white;
+                            list-style: none;
+                            font-size:medium;
+                            list-style: none;
+                            font-family: Verdana, Geneva, Tahoma, sans-serif;
+                        }
+
+                        a:link { text-decoration: none; color: inherit;}
+                        a:visited { text-decoration: none; color: inherit}
+                        a:hover { text-decoration: none; color: inherit}
+                        a:active { text-decoration: none; color: inherit}
+
                         }
                         </style>
 
